@@ -12,7 +12,7 @@ public class ZombieData {
 	public static void main(String[] args) throws Exception {
 		ArgsProcessor ap = ZombieSimulationFiles.createArgsProcessorFromFile(args);
 
-		// TODO: 1. Select the file you which to read from the file dialog box.
+		// TODO: 1. Select the file you wish to read from the file dialog box.
 
 		// TODO: 2. Read in the number of entities from the ArgsProcessor
 
