@@ -1,7 +1,6 @@
 package assignment4;
 
 import java.awt.Color;
-import java.util.Objects;
 
 import edu.princeton.cs.introcs.StdDraw;
 import support.cse131.ArgsProcessor;
