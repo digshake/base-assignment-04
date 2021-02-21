@@ -8,7 +8,7 @@ import java.nio.charset.Charset;
 /**
  * @author Dennis Cosgrove
  */
-public class SystemOutputUtils {
+public class OutputUtils {
 	public static String capture(Runnable runnable) throws IOException {
 		PrintStream preserved = System.out;
 		ByteArrayOutputStream baos = new ByteArrayOutputStream();
