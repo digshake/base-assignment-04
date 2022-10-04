@@ -1,15 +1,17 @@
 package practice4;
 
-import support.cse131.ArgsProcessor;
+import java.util.Scanner;
 
 /**
  * @author Dennis Cosgrove (http://www.cse.wustl.edu/~cosgroved/)
  */
 class Equality {
 	public static void main(String[] args) {
-		ArgsProcessor ap = new ArgsProcessor(args);
-		String a = ap.nextString("a?");
-		String b = ap.nextString("b?");
+		Scanner in = new Scanner(System.in);
+		System.out.println("a?");
+		String a = in.nextLine();
+		System.out.println("b?");
+		String b = in.nextLine();
 
 		System.out.println("a: \"" + a + "\"");
 		System.out.println("b: \"" + b + "\"");

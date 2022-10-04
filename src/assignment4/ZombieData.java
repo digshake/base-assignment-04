@@ -1,19 +1,24 @@
 package assignment4;
 
 import java.awt.Color;
+import java.io.File;
+import java.util.Scanner;
+
+import javax.swing.JFileChooser;
 
 import edu.princeton.cs.introcs.StdDraw;
-import support.cse131.ArgsProcessor;
-import zombies.ZombieSimulationFiles;
 
 public class ZombieData {
 
 	public static void main(String[] args) throws Exception {
-		// NOTE: The line below will prompt the user with a file open dialog box.
+		// NOTE: The lines below will prompt the user with a file open dialog box.
 		//       The contents of the selected file will be made available via the ArgsProcessor ap.
-		ArgsProcessor ap = ZombieSimulationFiles.createArgsProcessorFromFile(args);
-
-		// TODO: 1. Read in the number of entities from the ArgsProcessor
+		JFileChooser chooser = new JFileChooser("zombieSims");
+		chooser.showOpenDialog(null);
+		File f = new File(chooser.getSelectedFile().getPath());
+		Scanner in = new Scanner(f); //making Scanner with a File
+		
+		// TODO: 1. Read in the number of entities from Scanner
 
 		// TODO: 2. Create the arrays that will hold entity data
 
